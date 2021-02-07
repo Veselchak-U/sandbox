@@ -6,6 +6,7 @@ import 'package:sandbox/app/modules/showcase/views/showcase_view.dart';
 part 'app_routes.dart';
 
 class AppPages {
+  // ignore: constant_identifier_names
   static const INITIAL = Routes.SHOWCASE;
 
   static final routes = [

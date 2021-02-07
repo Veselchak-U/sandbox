@@ -24,6 +24,7 @@ dependencies:
   get: 3.24.0
   flutter:
     sdk: flutter
+  scrollable_positioned_list: ^0.1.9
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -33,6 +34,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic: ^1.9.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

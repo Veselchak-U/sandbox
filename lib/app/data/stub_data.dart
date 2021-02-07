@@ -2,7 +2,7 @@ import 'package:sandbox/app/data/models/category.dart';
 import 'package:sandbox/app/data/models/item.dart';
 
 class StubData {
-  static final _categoryes = [
+  static final categories = [
     CategoryModel(
       id: '1',
       name: 'Пицца',
@@ -34,12 +34,12 @@ class StubData {
   ];
 
   static final List<ItemModel> items = List.generate(
-    _categoryes.length * 5,
+    categories.length * 5,
     (index) {
       final subIndex = index ~/ 5;
       final id = '$index';
-      final category = _categoryes[subIndex];
-      final name = '${_categoryes[subIndex].name} ${index % 5}';
+      final category = categories[subIndex];
+      final name = '${categories[subIndex].name} ${index % 5}';
       final photoUrl = _photos[subIndex];
       final price = index * 150 % 1000;
       final quantity = index * 90 % 500;
